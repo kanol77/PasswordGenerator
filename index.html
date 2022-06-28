@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1 onclick="window.location.reload()">Password Generator</h1>
+    </header>
+    <article>
+        <div class="generator-box">
+            <h3>Generate your password:</h3>
+            Password Length: <input type="number" id="password-length" min="6" max="100" value="6" onkeydown="return false"></input>
+            Include Symbols:<input type="checkbox" id="symbols">
+            Include Numbers:<input type="checkbox" id="numbers">
+            Include Lowercase Characters: <input type="checkbox" id="lowercase">
+            Include Uppercase Characters: <input type="checkbox" id="uppercase">
+            <button id="generate">Generate</button>
+            <textarea id="generated-password" readonly="readonly"></textarea>
+        </div>
+    </article>
+    <footer>
+        <h3>Site created by kanol77</h3>
+    </footer>
+</body>
+</html>
